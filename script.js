@@ -1,3 +1,4 @@
+// Signup Modal
 const openSignup = document.getElementById('openSignup');
 const closeSignup = document.getElementById('closeSignup');
 const signupModal = document.getElementById('signupModal');
@@ -16,6 +17,26 @@ window.addEventListener('click', (e) => {
     }
 });
 
+// Login Modal
+const openLogin = document.getElementById('openLogin');
+const closeLogin = document.getElementById('closeLogin');
+const loginModal = document.getElementById('loginModal');
+
+openLogin.addEventListener('click', () => {
+    loginModal.style.display = 'flex';
+});
+
+closeLogin.addEventListener('click', () => {
+    loginModal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === loginModal) {
+        loginModal.style.display = 'none';
+    }
+});
+
+// Signup Form Validation
 const signupForm = document.getElementById('signupForm');
 
 signupForm.addEventListener('submit', (e) => {
@@ -29,7 +50,6 @@ signupForm.addEventListener('submit', (e) => {
     const terms = document.getElementById('terms').checked;
 
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
     const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
 
     if (!username) {
