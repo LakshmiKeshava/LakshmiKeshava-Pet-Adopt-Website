@@ -24,8 +24,8 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2  style = "color: black;"><b>Welcome to PetAdopt</b></h2>
-            <p style = "color: black;"><b>Your perfect companion is just a click away!</b></p>
+            <h2 style="color: black;"><b>Welcome to PetAdopt</b></h2>
+            <p style="color: black;"><b>Your perfect companion is just a click away!</b></p>
             <a href="#pets" class="btn hero-btn"><b>Browse Pets</b></a>
         </div>
     </section>
@@ -58,32 +58,48 @@
     </section>
 
 
-<div id="signupModal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="closeSignup">&times;</span>
-        <h2>Sign Up</h2>
-        <form class="auth-form" id="signupForm">
-            <input type="text" id="username" placeholder="Username">
-            <input type="email" id="email" placeholder="Email">
-            <input type="password" id="password" placeholder="Password">
-            <input type="password" id="confirmPassword" placeholder="Confirm Password">
-            <input type="tel" id="phone" placeholder="Phone Number">
-            <label class="terms">
-                <input type="checkbox" id="terms"> I agree to the <a href="#">Terms & Conditions</a>
-            </label>
-            <button type="submit" class="btn">Create Account</button>
-        </form>
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignup">&times;</span>
+            <h2>Sign Up</h2>
+            <form class="auth-form" id="signupForm">
+                <input type="text" id="username" placeholder="Username">
+                <span class="error-message" id="usernameError"></span>
+
+                <input type="email" id="email" placeholder="Email">
+                <span class="error-message" id="emailError"></span>
+
+                <input type="password" id="password" placeholder="Password">
+                <span class="error-message" id="passwordError"></span>
+
+                <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                <span class="error-message" id="confirmPasswordError"></span>
+
+                <input type="tel" id="phone" placeholder="Phone Number">
+                <span class="error-message" id="phoneError"></span>
+
+                <label class="terms">
+                    <input type="checkbox" id="terms"> I agree to the <a href="#">Terms & Conditions</a>
+                </label>
+                <span class="error-message" id="termsError"></span>
+
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+        </div>
     </div>
-</div>
 
 
     <div id="loginModal" class="modal">
         <div class="modal-content">
             <span class="close" id="closeLogin">&times;</span>
             <h2>Login</h2>
-            <form class="auth-form">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+            <form class="auth-form" id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email">
+                <span class="error-message" id="loginEmailError"></span>
+
+                <input type="password" id="loginPassword" placeholder="Password">
+                <span class="error-message" id="loginPasswordError"></span>
+
                 <button type="submit" class="btn">Login</button>
             </form>
         </div>
