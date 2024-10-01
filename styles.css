@@ -25,6 +25,13 @@ header {
     top: 0;
     z-index: 1000;
 }
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+
 
 .logo a {
     color: white;
@@ -52,6 +59,14 @@ nav ul li a {
 nav ul li a:hover {
     color: #f4a261;
 }
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+
+
 
 .hero {
     background: url('hero.jpg') no-repeat center center/cover;
@@ -123,8 +138,6 @@ nav ul li a:hover {
 
 
 
-
-/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -155,7 +168,7 @@ nav ul li a:hover {
     color: #f4a261;
 }
 
-/* Forms */
+
 .auth-form {
     display: flex;
     flex-direction: column;
